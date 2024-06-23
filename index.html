@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Kubernetes YAML Generator</title>
+        <link rel="apple-touch-icon" href="static/img/Octopus-96x96.png" />
+        <link rel="icon" href="static/img/Octopus-96x96.png" />
+        <link rel="canonical" href="https://k8syaml.com" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="Description" content="Octopus Deploy is a Deployment and Operations tool for AWS, Azure, .NET, Java, Kubernetes, Windows and Linux, and a Kubernetes YAML generator" />
+        <!-- for HTML4 -->
+        <meta charset="utf-8" />
+        <!-- for HTML5 -->
+        <meta name="viewport" content="width=device-width" />
+        <style>
+            html {
+                font-size: 100%;
+            }
+
+            body {
+                font-size: 1rem;
+                font-family: "Roboto", Helvetica, Arial, sans-serif;
+                overflow: auto;
+                margin: 0;
+                padding: 0;
+                background: #fafafa;
+                letter-spacing: 0.25px;
+                line-height: 1.25rem;
+            }
+
+            .OctopusLoader {
+                display: flex;
+                align-items: center;
+                height: 100vh;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .loading {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .loading img {
+                width: 18.75rem;
+                margin-top: 2rem;
+            }
+
+            .fatal-error {
+                background-color: #fbeceb;
+                font-size: 0.875rem;
+                color: #db4437;
+                padding: 1rem;
+                margin-top: 1.2rem;
+                border-radius: 10px;
+                border: 3px solid rgb(209, 192, 192);
+                text-align: center;
+            }
+
+            @-webkit-keyframes fa-spin {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    -webkit-transform: rotate(359deg);
+                    transform: rotate(359deg);
+                }
+            }
+
+            @keyframes fa-spin {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    -webkit-transform: rotate(359deg);
+                    transform: rotate(359deg);
+                }
+            }
+        </style>
+    <link href="static/css/app-main.css" rel="stylesheet"><link href="static/css/vendor.css" rel="stylesheet"></head>
+    <body>
+        <div id="app">
+            <div class="OctopusLoader">
+                <div class="loading">
+                    <section>Loading, please wait...</section>
+                    <img src="static/img/loading-image.svg" alt="Octopus Deploy" width="300" height="111.63" />
+                </div>
+                <noscript>
+                    <div class="fatal-error">
+                        <style>
+                            section {
+                                display: none;
+                            }
+                        </style>
+                        <strong>JavaScript must be enabled</strong>
+                        <p>
+                            You must enable JavaScript in your browser for Octopus Deploy to work. Here are the
+                            <a href="https://www.enable-javascript.com/" target="_blank" rel="noopener noreferrer"> instructions how to enable JavaScript in your web browser</a>.
+                        </p>
+                    </div>
+                </noscript>
+                <!--[if lte IE 8]>
+                    <div class="fatal-error">
+                        <strong>Unsupported browser</strong>
+                        <p>
+                            Internet Explorer versions 8 and lower are no longer supported by Octopus Deploy. For the best experience, consider upgrading to the latest version of Internet Explorer or using an alternative browser such as Google Chrome
+                            or Mozilla Firefox.
+                        </p>
+                    </div>
+                <![endif]-->
+            </div>
+        </div>
+        <div id="outdated"></div>
+    <script src="static/js/manifest.js"></script><script src="static/js/app-main.js"></script><script src="static/js/vendor-material-ui.js"></script><script src="static/js/vendor-react.js"></script><script src="static/js/vendor.js"></script><script src="static/js/null.js"></script></body>
+</html>
